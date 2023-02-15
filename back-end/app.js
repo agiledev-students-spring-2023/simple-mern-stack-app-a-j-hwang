@@ -84,7 +84,7 @@ app.get('/about', async (req, res) => {
   try {
     res.json({
       txt: 'My name is Alicia Hwang, I am seninor studing Computer Science in NYU. My passion is in UX design and digital art! ',
-      img: 'https://github.com/agiledev-students-spring-2023/simple-mern-stack-app-jh6651/blob/master/back-end/photo.jpg', 
+      img: 'https://raw.githubusercontent.com/agiledev-students-spring-2023/simple-mern-stack-app-a-j-hwang/cc344bbfcd0c158698969bb4a1c0f1945b773d19/back-end/photo.jpg', 
     })
   }catch (err) {
     console.error(err)

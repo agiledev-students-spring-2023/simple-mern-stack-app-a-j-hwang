@@ -38,9 +38,8 @@ useEffect(() => {
 return (
   <>
     <h1>About Me</h1>
-
     {error && <p className="MessageForm-error">{error}</p>}
-    <img src={myImage} alt='' style={{maxHeight:"250px", width:"auto"}}/>
+    <img src={myImage} alt='' style={{maxHeight:"500px", width:"auto"}}/>
     <p style={{ width: '35%', margin: 'auto', lineHeight: '2'}}>
       {myText}
     </p>
