@@ -78,5 +78,18 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+// a route to handle fetching all messages
+app.get('/about', async (req, res) => {
+  // load all messages from database
+  try {
+    res.json({
+      txt: 'My name is Alicia Hwang, I am seninor studing Computer Science in NYU. My passion is in UX design and digital art! ',
+      img: 'https://github.com/agiledev-students-spring-2023/simple-mern-stack-app-jh6651/blob/master/back-end/photo.jpg', 
+    })
+  }catch (err) {
+    console.error(err)
+  }
+})
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
